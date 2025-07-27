@@ -90,7 +90,7 @@ def main(args):
 if __name__ == '__main__':
     parser = ArgumentParser(
         description='train (or resume training) a tfdiff model')
-    parser.add_argument('--task_id', type=int,
+    parser.add_argument('--task_id', type=int, default=0,
                         help='use case of tfdiff model, 0/1/2/3 for WiFi/FMCW/MIMO/EEG respectively')
     parser.add_argument('--model_dir', default=None,
                         help='directory in which to store model checkpoints and training logs')
